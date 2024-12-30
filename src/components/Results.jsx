@@ -7,11 +7,13 @@ export default function Results({ userInput }) {
     <table id="result">
       <thead>
         <tr>
-          <th>Year</th>
+          <th>Sl.No.</th>
+          <th>SIP Amount</th>
+          <th>Expected Return</th>
           <th>Total Value</th>
-          <th>Interest (Year)</th>
-          <th>Total Interest</th>
-          <th>Invested Capital</th>
+          {/* <th>Expected Returns for the Term</th>
+          <th>Expected Total Returns</th>
+          <th>Invested Capital</th> */}
         </tr>
       </thead>
       <tbody>
@@ -25,10 +27,13 @@ export default function Results({ userInput }) {
           return (
             <tr key={yearResult.year}>
               <td>{yearResult.year}</td>
-              <td>{formatter.format(yearResult.valueEndOfYear)}</td>
+              <td>{formatter.format(yearResult.sipAmount)}</td>
+              <td>{formatter.format(yearResult.interestEarnedInYear)}</td>
+              <td>{formatter.format(yearResult.totalValue)}</td>
+              {/* <td>{formatter.format(yearResult.totalCapitalInvested)}</td>
               <td>{formatter.format(yearResult.interest)}</td>
               <td>{formatter.format(totalInterest)}</td>
-              <td>{formatter.format(totalCapital)}</td>
+              <td>{formatter.format(totalCapital)}</td> */}
             </tr>
           );
         })}

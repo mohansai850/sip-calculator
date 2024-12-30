@@ -3,7 +3,7 @@ import UserInput from "./components/UserInput.jsx";
 import Results from "./components/Results.jsx";
 
 const INITIAL_VALUES = {
-  initialInvestment: 1000,
+  initialInvestment: 0,
   annualInvestment: 100,
   expectedReturn: 12,
   duration: 12,
