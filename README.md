@@ -1,0 +1,1 @@
+SIP Calculator which gives us the data in the form of a table having columns for Year, Total Value, Interest, Total Interest and Invested Capital which takes Initial Investment Amount, SIP Amount, Expected Return Percentage and SIP Duration as inputs.
